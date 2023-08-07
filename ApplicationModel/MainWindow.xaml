@@ -3,10 +3,32 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ApplicationModel"
+        xmlns:local="clr-namespace:ApplicationModel" xmlns:ydock="clr-namespace:VishwaDockLibNew;assembly=VishwaDockLibNew"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Menu VerticalAlignment="Top">
+        <MenuItem Header="ToolWindow">
+            <MenuItem Header="left" Click="OnClick"/>
+            <MenuItem Header="left_1" Click="OnClick"/>
+            <MenuItem Header="top" Click="OnClick"/>
+            <MenuItem Header="top_1" Click="OnClick"/>
+            <MenuItem Header="right" Click="OnClick"/>
+            <MenuItem Header="right_1" Click="OnClick"/>
+            <MenuItem Header="bottom" Click="OnClick"/>
+            <MenuItem Header="bottom_1" Click="OnClick"/>
+        </MenuItem>
+        <MenuItem Header="DocWindow">
+            <MenuItem Header="doc_0" Click="OnClick"/>
+            <MenuItem Header="doc_1" Click="OnClick"/>
+            <MenuItem Header="doc_2" Click="OnClick"/>
+            <MenuItem Header="doc_3" Click="OnClick"/>
+        </MenuItem>
+    </Menu>
+    <ydock:DockManager Grid.Row="1" x:Name="DockManager"/>
     </Grid>
 </Window>

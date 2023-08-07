@@ -26,10 +26,7 @@ namespace VishwaDockLibNew.Global.Extension
         [ConstructorArgument("Key")]
         public string Key { get; set; }
 
-        public string Value
-        {
-            get { return Properties.Resources.ResourceManager.GetString(Key, Properties.Resources.Culture); }
-        }
+        public string Value => Properties.Resources.ResourceManager.GetString(Key, Properties.Resources.Culture);
 
         public static event EventHandler LanaguageChanged = delegate { };
 
@@ -42,8 +39,8 @@ namespace VishwaDockLibNew.Global.Extension
 
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            IProvideValueTarget target = serviceProvider.GetService(typeof(IProvideValueTarget)) as IProvideValueTarget;
-            Setter setter = target.TargetObject as Setter;
+            IProvideValueTarget? target = serviceProvider.GetService(typeof(IProvideValueTarget)) as IProvideValueTarget;
+            Setter? setter = target.TargetObject as Setter;
             if (setter != null)
                 return new Binding("Value") { Source = this, Mode = BindingMode.OneWay };
             else
