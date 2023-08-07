@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationModel", "ApplicationModel\ApplicationModel.csproj", "{110ACE3C-65B7-4053-8CA4-7D32F642FDA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VishwaDockLib", "VishwaDockLib\VishwaDockLib.csproj", "{B74C69C8-0840-4659-89FD-2CA0798AA944}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VishwaDockLibNew", "VishwaDockLibNew\VishwaDockLibNew.csproj", "{0197A6D0-A38D-4FAF-8D96-F3CCD0BDB6B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{110ACE3C-65B7-4053-8CA4-7D32F642FDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{110ACE3C-65B7-4053-8CA4-7D32F642FDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{110ACE3C-65B7-4053-8CA4-7D32F642FDA1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B74C69C8-0840-4659-89FD-2CA0798AA944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B74C69C8-0840-4659-89FD-2CA0798AA944}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B74C69C8-0840-4659-89FD-2CA0798AA944}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B74C69C8-0840-4659-89FD-2CA0798AA944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0197A6D0-A38D-4FAF-8D96-F3CCD0BDB6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0197A6D0-A38D-4FAF-8D96-F3CCD0BDB6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0197A6D0-A38D-4FAF-8D96-F3CCD0BDB6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0197A6D0-A38D-4FAF-8D96-F3CCD0BDB6B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

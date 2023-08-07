@@ -2,26 +2,36 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0-windows</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Enum\" />
-    <Folder Include="Global\Commands\" />
-    <Folder Include="Global\Extension\" />
-    <Folder Include="Interface\" />
     <Folder Include="LayoutSetting\" />
     <Folder Include="Model\Element\" />
     <Folder Include="Model\Layout\" />
     <Folder Include="Resource\" />
-    <Folder Include="Themes\" />
     <Folder Include="ViewRender\Control\" />
     <Folder Include="ViewRender\Element\" />
     <Folder Include="ViewRender\Layout\" />
     <Folder Include="ViewRender\Menu\" />
-    <Folder Include="ViewRender\Windows\" />
     <Folder Include="ViewRender\Rendering\" />
+    <Folder Include="ViewRender\Windows\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
