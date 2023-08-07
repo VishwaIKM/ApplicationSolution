@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Converters\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Global\Commands\" />
+    <Folder Include="Global\Extension\" />
+    <Folder Include="Interface\" />
+    <Folder Include="LayoutSetting\" />
+    <Folder Include="Model\Element\" />
+    <Folder Include="Model\Layout\" />
+    <Folder Include="Resource\" />
+    <Folder Include="Themes\" />
+    <Folder Include="ViewRender\Control\" />
+    <Folder Include="ViewRender\Element\" />
+    <Folder Include="ViewRender\Layout\" />
+    <Folder Include="ViewRender\Menu\" />
+    <Folder Include="ViewRender\Windows\" />
+    <Folder Include="ViewRender\Rendering\" />
+  </ItemGroup>
+
+</Project>
